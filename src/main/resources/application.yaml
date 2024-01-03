@@ -1,0 +1,58 @@
+
+security:
+  jwt:
+    secret-key: verysecretkeyohsosecretdamnhowlongisthispleasedontusethisinproduction
+    token-duration: 1D
+
+spring:
+  thymeleaf:
+    cache: false
+
+  datasource:
+    url: jdbc:mysql://103.197.184.197:1811/shopiec
+    username: tpham
+    password: Tt123456?
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
+        jdbc:
+          batch_size: 100
+
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQLDialect
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: shopiecommerce2023@gmail.com
+    password: ltxaihapggngxtag
+    protocol: smtp
+    properties:
+      mail:
+        smtp:
+          auth:
+            true
+          starttls:
+            enable:
+              true
+paypal:
+  client:
+    app: AQty0uFtZYHspdllJD-88TB_1Atg75OULHoA50A1PtWJBk4qMuPslPSlPaT0a3Iw2vSAcE3p7nKjHVDH
+    secret: EOX84AftR8QfuUW6Q3nc1KPyFrUZuLxdC9v1-6LTjxIh7KfPILkedVsng1XUYKBQsbmV7tTASXP3Wh0C
+  mode: sandbox
+
+exchangerate:
+  api:
+    key: 4bcf463d297ebd98140f8cba
+
+fe_production:
+  url: http://shopiec.shop/#/
+
+
+fe_localhost:
+  url: http://localhost:8080/
+
+
